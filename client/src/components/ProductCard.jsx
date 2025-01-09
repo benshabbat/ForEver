@@ -34,6 +34,37 @@ export default function ProductCard({ product }) {
             </ul>
           </div>
         )}
+
+        {product.additionalInfo && (
+          <div className="additional-info">
+            <h3 className="benefits-title">מידע נוסף:</h3>
+            
+            <div className="info-section">
+              <h4 className="info-subtitle">המלצות שימוש:</h4>
+              <p>{product.additionalInfo["המלצות שימוש"]}</p>
+            </div>
+
+            <div className="info-section">
+              <h4 className="info-subtitle">זמן שימוש מומלץ:</h4>
+              <p>{product.additionalInfo["זמן שימוש מומלץ"]}</p>
+            </div>
+
+            <div className="info-section">
+              <h4 className="info-subtitle">יתרונות נוספים:</h4>
+              <ul className="benefits-list">
+                {product.additionalInfo["יתרונות נוספים"].map((benefit, index) => (
+                  <li key={index}>{benefit}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="info-section">
+              <h4 className="info-subtitle">מחקרים תומכים:</h4>
+              <p>{product.additionalInfo["מחקרים תומכים"]}</p>
+            </div>
+          </div>
+        )}
+
         
         <a 
           href="https://flpil.co.il/?agent=77217" 
