@@ -1,35 +1,49 @@
-
-
+// ProductCard.jsx
 export default function ProductCard({ product }) {
-
-    return (
-      <div className="card w-full max-w-md mx-auto my-4">
-        <div className="card-header">
-          <img 
-            src={product.image} 
-            alt={product.name} 
-            className="product-image"
-          />
-          <h2 className="card-title">{product.name}</h2>
+  return (
+    <article className="product-card fade-in">
+      <div className="product-image-wrapper">
+        <img 
+          src={product.image} 
+          alt={product.name} 
+          className="product-image"
+        />
+      </div>
+      <div className="product-content">
+        <h2 className="product-title">{product.name}</h2>
+        <p className="product-description">{product.description}</p>
+        
+        <div className="product-benefits">
+          <h3 className="benefits-title">יתרונות המוצר:</h3>
+          <ul className="benefits-list">
+            {product.benefits.map((benefit, index) => (
+              <li key={index}>{benefit}</li>
+            ))}
+          </ul>
         </div>
-        <div className="card-content">
-          <p className="card-description">
-            {product.description}
-          </p>
-          <div className="space-y-2">
-            <h4 className="benefits-title">יתרונות המוצר:</h4>
+
+        {product.specs && (
+          <div className="product-specs">
+            <h3 className="benefits-title">מפרט טכני:</h3>
             <ul className="benefits-list">
-              {product.benefits.map((benefit, index) => (
-                <li key={index}>{benefit}</li>
+              {Object.entries(product.specs).map(([key, value]) => (
+                <li key={key}>
+                  {key}: {typeof value === 'boolean' ? (value ? 'כן' : 'לא') : value}
+                </li>
               ))}
             </ul>
-            <a href="https://flpil.co.il/?agent=77217" target="_blank"
-              className="read-more-btn"
-            >
-             קרא עוד
-            </a>
           </div>
-        </div>
+        )}
+        
+        <a 
+          href="https://flpil.co.il/?agent=77217" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button"
+        >
+          קרא עוד
+        </a>
       </div>
-    );
+    </article>
+  );
 }
