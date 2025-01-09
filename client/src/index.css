@@ -1,0 +1,221 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* פלטת צבעים טבעית */
+  --color-primary: #4a7c59;      /* ירוק כהה */
+  --color-secondary: #89b399;    /* ירוק בהיר */
+  --color-accent: #d4e6d4;       /* ירוק בהיר מאוד */
+  --color-text: #2c3e2d;         /* ירוק כהה לטקסט */
+  --color-text-light: #5a725b;   /* ירוק בינוני לטקסט */
+  --color-background: #f5f8f5;   /* רקע בהיר עם גוון ירוק */
+  --color-card: #ffffff;         /* לבן לכרטיסים */
+  --border-radius: 12px;         /* עיגול פינות */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  background-image: linear-gradient(120deg, #f5f8f5 0%, #ffffff 100%);
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Grid System */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-cols-1 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card Component */
+.card {
+  background-color: var(--color-card);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 20px rgba(74, 124, 89, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border: 1px solid rgba(74, 124, 89, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(74, 124, 89, 0.15);
+}
+
+.card-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+/* Images */
+.product-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .product-image {
+  transform: scale(1.05);
+}
+
+/* Typography */
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.page-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-secondary);
+  margin: 1rem auto;
+  border-radius: 2px;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 1rem 0;
+}
+
+.card-description {
+  color: var(--color-text-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+/* Benefits List */
+.benefits-title {
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.benefits-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.benefits-list li {
+  margin-bottom: 0.8rem;
+  padding-right: 1.8rem;
+  position: relative;
+  color: var(--color-text-light);
+}
+
+.benefits-list li::before {
+  content: '🌿';
+  position: absolute;
+  right: 0;
+  font-size: 1rem;
+}
+
+/* Buttons */
+.read-more-btn {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.read-more-btn:hover {
+  background-color: var(--color-secondary);
+  transform: translateY(-2px);
+}
+
+/* Additional Info Section */
+.additional-info {
+  margin-top: 1.5rem;
+  padding: 1.2rem;
+  background-color: var(--color-accent);
+  border-radius: var(--border-radius);
+  color: var(--color-text);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .card {
+    margin: 0.5rem 0;
+  }
+  
+  .benefits-list li {
+    font-size: 0.9rem;
+  }
+}
+
+/* Animation Classes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* RTL Support */
+[dir="rtl"] .benefits-list li::before {
+  right: 0;
+  left: auto;
+}
