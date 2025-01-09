@@ -12,11 +12,11 @@ export const products = [
       "תומך בבריאות העור והרקמות"
     ],
     specs: {
-      size: "1 ליטר",
-      servingSize: "30 מ\"ל",
-      servingsPerContainer: "33",
-      kosher: true,
-      naturalIngredients: true
+      "גודל אריזה": "1 ליטר",
+      "מנה יומית מומלצת": "30 מ\"ל",
+      "כמות מנות באריזה": "33 מנות",
+      "כשרות": "כשר למהדרין",
+      "רכיבים טבעיים": "100% טבעי"
     },
     image: "https://flpil.co.il/wp-content/uploads/2021/04/%D7%92%D7%9C-%D7%90%D7%9C%D7%95%D7%95%D7%A8%D7%94-%D7%9C%D7%A9%D7%AA%D7%99%D7%99%D7%94-%D7%A2%D7%9D-%D7%A4%D7%A8%D7%A1%D7%99%D7%9D-1.png"
   },
@@ -33,11 +33,11 @@ export const products = [
       "מסייע בשמירה על בריאות העיניים"
     ],
     specs: {
-      size: "120 כמוסות רכות",
-      servingSize: "2 כמוסות",
-      servingsPerContainer: "60",
-      kosher: true,
-      omega3Content: "1305mg per serving"
+      "גודל אריזה": "120 כמוסות רכות",
+      "מנה יומית מומלצת": "2 כמוסות",
+      "כמות מנות באריזה": "60 מנות",
+      "כשרות": "כשר למהדרין",
+      "תכולת אומגה 3": "1305 מ\"ג למנה"
     },
     image: "https://flpil.co.il/wp-content/uploads/2021/04/arctic-sea-1-768x768.png"
   },
@@ -54,11 +54,11 @@ export const products = [
       "טעם מנטה טבעי ומרענן"
     ],
     specs: {
-      size: "130 גרם",
-      natural: true,
-      fluorideFree: true,
-      suitableFor: "כל המשפחה",
-      kosher: true
+      "גודל אריזה": "130 גרם",
+      "רכיבים טבעיים": "100% טבעי",
+      "ללא פלואוריד": "כן",
+      "מתאים ל": "כל המשפחה",
+      "כשרות": "כשר למהדרין"
     },
     image: "https://flpil.co.il/wp-content/uploads/2021/05/Forever-ToothGel-single_KO_Final_EU-v3-768x768.png"
   }

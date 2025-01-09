@@ -28,7 +28,7 @@ export default function ProductCard({ product }) {
             <ul className="benefits-list">
               {Object.entries(product.specs).map(([key, value]) => (
                 <li key={key}>
-                  {key}: {typeof value === 'boolean' ? (value ? 'כן' : 'לא') : value}
+                  {key}: {value}
                 </li>
               ))}
             </ul>
