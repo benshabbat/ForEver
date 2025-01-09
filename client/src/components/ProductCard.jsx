@@ -1,8 +1,7 @@
-import { useState } from "react";
+
 
 export default function ProductCard({ product }) {
-    const [showMore, setShowMore] = useState(false);
-    
+
     return (
       <div className="card w-full max-w-md mx-auto my-4">
         <div className="card-header">
@@ -24,17 +23,11 @@ export default function ProductCard({ product }) {
                 <li key={index}>{benefit}</li>
               ))}
             </ul>
-            {showMore && (
-              <div className="additional-info">
-                <p>מידע נוסף על המוצר...</p>
-              </div>
-            )}
-            <button 
-              onClick={() => setShowMore(!showMore)}
+            <a href="https://flpil.co.il/?agent=77217" target="_blank"
               className="read-more-btn"
             >
-              {showMore ? 'הצג פחות' : 'קרא עוד'}
-            </button>
+             קרא עוד
+            </a>
           </div>
         </div>
       </div>

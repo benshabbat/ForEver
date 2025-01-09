@@ -11,7 +11,7 @@ export const products = [
         "מכיל ויטמינים ומינרלים חיוניים",
         "99.7% ג'ל אלוורה טהור"
       ],
-      image: "/api/placeholder/400/300"
+      image: "https://flpil.co.il/wp-content/uploads/2021/04/%D7%92%D7%9C-%D7%90%D7%9C%D7%95%D7%95%D7%A8%D7%94-%D7%9C%D7%A9%D7%AA%D7%99%D7%99%D7%94-%D7%A2%D7%9D-%D7%A4%D7%A8%D7%A1%D7%99%D7%9D-1.png"
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ export const products = [
         "מקור טבעי לאומגה 3",
         "ללא טעם דגים"
       ],
-      image: "/api/placeholder/400/300"
+      image: "https://flpil.co.il/wp-content/uploads/2021/04/arctic-sea-1-768x768.png"
     },
     {
       id: 3,
@@ -35,6 +35,6 @@ export const products = [
         "מכיל אלוורה מייצב",
         "ללא פלואוריד"
       ],
-      image: "/api/placeholder/400/300"
+      image: "https://flpil.co.il/wp-content/uploads/2021/05/Forever-ToothGel-single_KO_Final_EU-v3-768x768.png"
     }
   ];
