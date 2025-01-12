@@ -31,6 +31,7 @@ export const products = [
       "מחקרים תומכים": "מחקרים קליניים הראו שצריכה קבועה של ג'ל אלוורה משפרת את תפקוד מערכת העיכול ומחזקת את המערכת החיסונית"
     },
     image: "https://flpil.co.il/wp-content/uploads/2021/04/%D7%92%D7%9C-%D7%90%D7%9C%D7%95%D7%95%D7%A8%D7%94-%D7%9C%D7%A9%D7%AA%D7%99%D7%99%D7%94-%D7%A2%D7%9D-%D7%A4%D7%A8%D7%A1%D7%99%D7%9D-1.png"
+  ,link:"https://flpil.co.il/shop/drinks/forever-aloe-vera-gel/?agent=77217"
   },
   {
     id: 2,
@@ -52,6 +53,7 @@ export const products = [
       "תכולת אומגה 3": "1305 מ\"ג למנה"
     },
     image: "https://flpil.co.il/wp-content/uploads/2021/04/arctic-sea-1-768x768.png"
+     ,link:"https://flpil.co.il/shop/nutritional/omega-3/?agent=77217"
   },
   {
     id: 3,
@@ -73,6 +75,7 @@ export const products = [
       "כשרות": "כשר למהדרין"
     },
     image: "https://flpil.co.il/wp-content/uploads/2021/05/Forever-ToothGel-single_KO_Final_EU-v3-768x768.png"
+     ,link:"https://flpil.co.il/shop/bee-products/forever-bright/?agent=77217"
   },
   {
     id: 4,

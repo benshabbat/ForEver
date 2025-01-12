@@ -67,12 +67,20 @@ export default function ProductCard({ product }) {
 
         
         <a 
-          href="https://flpil.co.il/?agent=77217" 
+          href={product.link} 
           target="_blank"
           rel="noopener noreferrer"
           className="button"
         >
           קרא עוד
+        </a>
+        <a 
+          href="https://flpil.co.il/?agent=77217" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button"
+        >
+          הוספה לסל
         </a>
       </div>
     </article>
