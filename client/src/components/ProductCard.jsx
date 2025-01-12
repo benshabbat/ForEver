@@ -75,7 +75,7 @@ export default function ProductCard({ product }) {
           קרא עוד
         </a>
         <a 
-          href="https://flpil.co.il/?agent=77217" 
+          href="https://flpil.co.il/wcssc-cart/3a7fbb8d5fefc48eee1259bda03f56e6/?agent=77217" 
           target="_blank"
           rel="noopener noreferrer"
           className="button"
