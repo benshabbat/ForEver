@@ -74,14 +74,14 @@ export default function ProductCard({ product }) {
         >
           קרא עוד
         </a>
-        <a 
+        {/* <a 
           href="https://flpil.co.il/wcssc-cart/3a7fbb8d5fefc48eee1259bda03f56e6/?agent=77217" 
           target="_blank"
           rel="noopener noreferrer"
           className="button"
         >
           הוספה לסל
-        </a>
+        </a> */}
       </div>
     </article>
   );
