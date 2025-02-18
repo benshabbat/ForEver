@@ -1,18 +1,16 @@
+import "./ProductCard.css";
+
 // ProductCard.jsx
 export default function ProductCard({ product }) {
   return (
     <article className="product-card fade-in">
       <div className="product-image-wrapper">
-        <img 
-          src={product.image} 
-          alt={product.name} 
-          className="product-image"
-        />
+        <img src={product.image} alt={product.name} className="product-image" />
       </div>
       <div className="product-content">
         <h2 className="product-title">{product.name}</h2>
         <p className="product-description">{product.description}</p>
-        
+
         <div className="product-benefits">
           <h3 className="benefits-title">יתרונות המוצר:</h3>
           <ul className="benefits-list">
@@ -38,7 +36,7 @@ export default function ProductCard({ product }) {
         {product.additionalInfo && (
           <div className="additional-info">
             <h3 className="benefits-title">מידע נוסף:</h3>
-            
+
             <div className="info-section">
               <h4 className="info-subtitle">המלצות שימוש:</h4>
               <p>{product.additionalInfo["המלצות שימוש"]}</p>
@@ -52,9 +50,11 @@ export default function ProductCard({ product }) {
             <div className="info-section">
               <h4 className="info-subtitle">יתרונות נוספים:</h4>
               <ul className="benefits-list">
-                {product.additionalInfo["יתרונות נוספים"].map((benefit, index) => (
-                  <li key={index}>{benefit}</li>
-                ))}
+                {product.additionalInfo["יתרונות נוספים"].map(
+                  (benefit, index) => (
+                    <li key={index}>{benefit}</li>
+                  )
+                )}
               </ul>
             </div>
 
@@ -65,9 +65,8 @@ export default function ProductCard({ product }) {
           </div>
         )}
 
-        
-        <a 
-          href={product.link} 
+        <a
+          href={product.link}
           target="_blank"
           rel="noopener noreferrer"
           className="button"
