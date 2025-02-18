@@ -1,4 +1,3 @@
-// ProductCard.jsx
 export default function ProductCard({ product }) {
   return (
     <article className="product-card fade-in">
@@ -41,7 +40,7 @@ export default function ProductCard({ product }) {
             
             <div className="info-section">
               <h4 className="info-subtitle">המלצות שימוש:</h4>
-              <p>{product.additionalInfo["המלצות שימוש"]}</p>
+              <p>{product.additionalInfo.tips}</p>
             </div>
 
             <div className="info-section">
@@ -52,7 +51,7 @@ export default function ProductCard({ product }) {
             <div className="info-section">
               <h4 className="info-subtitle">יתרונות נוספים:</h4>
               <ul className="benefits-list">
-                {product.additionalInfo["יתרונות נוספים"].map((benefit, index) => (
+                {product.additionalInfo.benefits.map((benefit, index) => (
                   <li key={index}>{benefit}</li>
                 ))}
               </ul>
