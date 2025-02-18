@@ -39,7 +39,7 @@ export default function ProductCard({ product }) {
 
             <div className="info-section">
               <h4 className="info-subtitle">המלצות שימוש:</h4>
-              <p>{product.additionalInfo["המלצות שימוש"]}</p>
+              <p>{product.additionalInfo.tips}</p>
             </div>
 
             <div className="info-section">
@@ -50,11 +50,17 @@ export default function ProductCard({ product }) {
             <div className="info-section">
               <h4 className="info-subtitle">יתרונות נוספים:</h4>
               <ul className="benefits-list">
+<<<<<<< HEAD:client/src/components/ProductCard/ProductCard.jsx
                 {product.additionalInfo["יתרונות נוספים"].map(
                   (benefit, index) => (
                     <li key={index}>{benefit}</li>
                   )
                 )}
+=======
+                {product.additionalInfo.benefits.map((benefit, index) => (
+                  <li key={index}>{benefit}</li>
+                ))}
+>>>>>>> c4953b6fd29dc6ccee0b3c04cd7f12c7cae95a3a:client/src/components/ProductCard.jsx
               </ul>
             </div>
 
