@@ -1,21 +1,23 @@
-import ProductCard from '../components/ProductCard';
-import { products } from '../products';
+import ProductCard from "../components/ProductCard/ProductCard";
+import { products } from "../products";
 
 const ForeverProducts = () => {
   return (
     <main className="container" dir="rtl">
       <section className="intro-section fade-in">
-        <h1 className="page-title">מוצרי Forever Living - איכות טבעית לחיים בריאים</h1>
+        <h1 className="page-title">
+          מוצרי Forever Living - איכות טבעית לחיים בריאים
+        </h1>
         <p className="intro-text">
-          ברוכים הבאים לחנות המוצרים שלנו! אנו מציעים מגוון רחב של מוצרי בריאות וטיפוח טבעיים, 
-          המבוססים על צמח האלוורה האיכותי ביותר.
+          ברוכים הבאים לחנות המוצרים שלנו! אנו מציעים מגוון רחב של מוצרי בריאות
+          וטיפוח טבעיים, המבוססים על צמח האלוורה האיכותי ביותר.
         </p>
       </section>
 
       <section className="products-section">
         <h2 className="section-title">המוצרים המובילים שלנו</h2>
         <div className="products-grid">
-          {products.map(product => (
+          {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
@@ -45,6 +47,18 @@ const ForeverProducts = () => {
         </div>
       </section>
 
+      <section className="faq-section">
+        <h2 className="section-title">שאלות נפוצות</h2>
+        <div className="faq-item">
+          <h3 className="faq-question">איך לדעת איזה מוצר מתאים לי?</h3>
+          <p>אנחנו כאן בשבילכם! צרו קשר ונשמח להעניק ייעוץ אישי המותאם לצרכים שלכם.</p>
+        </div>
+        <div className="faq-item">
+          <h3 className="faq-question">האם המוצרים בטוחים לשימוש?</h3>
+          <p>כל מוצרי Forever עוברים בדיקות מחמירות ומאושרים על ידי משרד הבריאות.</p>
+        </div>
+      </section>
+
       <section className="contact-section">
         <h2 className="section-title">יצירת קשר</h2>
         <p className="intro-text">
@@ -55,14 +69,18 @@ const ForeverProducts = () => {
             <div className="contact-icon">👩</div>
             <h3 className="contact-name">מירי</h3>
             <p>יועצת מוצרי Forever</p>
-            <a href="tel:0584085081" className="contact-phone">058-408-5081</a>
+            <a href="tel:0584085081" className="contact-phone">
+              058-408-5081
+            </a>
           </div>
-          
+
           <div className="contact-card">
             <div className="contact-icon">👨</div>
             <h3 className="contact-name">דוד</h3>
             <p>יועץ מוצרי Forever</p>
-            <a href="tel:0502284238" className="contact-phone">050-228-4238</a>
+            <a href="tel:0502284238" className="contact-phone">
+              050-228-4238
+            </a>
           </div>
         </div>
       </section>
