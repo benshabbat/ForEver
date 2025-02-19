@@ -47,18 +47,6 @@ const ForeverProducts = () => {
         </div>
       </section>
 
-      <section className="faq-section">
-        <h2 className="section-title">שאלות נפוצות</h2>
-        <div className="faq-item">
-          <h3 className="faq-question">איך לדעת איזה מוצר מתאים לי?</h3>
-          <p>אנחנו כאן בשבילכם! צרו קשר ונשמח להעניק ייעוץ אישי המותאם לצרכים שלכם.</p>
-        </div>
-        <div className="faq-item">
-          <h3 className="faq-question">האם המוצרים בטוחים לשימוש?</h3>
-          <p>כל מוצרי Forever עוברים בדיקות מחמירות ומאושרים על ידי משרד הבריאות.</p>
-        </div>
-      </section>
-
       <section className="contact-section">
         <h2 className="section-title">יצירת קשר</h2>
         <p className="intro-text">
